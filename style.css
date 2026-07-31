@@ -57,7 +57,6 @@ h1 {
 }
 
 #menu {
-    padding-left: 45px;
     padding-bottom: 20px;
 }
 
@@ -65,6 +64,7 @@ h1 {
     font-size: 23px;
     color: var(--brown);
     padding-bottom: 20px;
+    padding-left: 45px;
 }
 
 #menu a {
