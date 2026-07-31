@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>welcome to alyah's corner!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to alyah's cafe!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>welcome to alyah's corner!</h1>
-    <button id="button">this is my first button</button>
-    <button id="secondbutton">this is my second button</button>
+    <nav class="topnav">  
+        <a href="#about">about me</a>
+        <a href="#projects">my projects</a>
+        <a class="active" href="#home">home</a>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>welcome to alyah's cafe</h1>
+    </header>
+    <section id="menu">
+        <h1>what's on the menu?</h1>
+        <h2>i'm currently working on: <br> <a href="#projects">academica</a></h2>
+        <h2>i'm currently obsessed with: <br> <a href="#about">journaling and web development</a></h2>
+        <h2>i'm currently reading: <br> <a href="https://www.goodreads.com/en/book/show/40121378-atomic-habits" target="_blank">atomic habits by james clear</a></h2>
+        <h2>i'm currently watching: <br> <a href="https://www.imdb.com/title/tt22091076/" target="_blank">high potential</a></h2>
+    </section>
+    
+    <section id="about">
+        <div class="about-rectangle"></div>
+        <div class="about-content">
+            <h1>about me !</h1>
+            <p>
+                hey! my name is alyah (she/her) and i’m an 
+                <strong>11th grade IB student</strong> situated in 
+                <strong>ontario, canada</strong>. I love 
+                <strong>exploring</strong> new things (thus my 
+                <em>many</em> new hobbies) and being creative by 
+                <strong>building</strong> new projects. programming-wise, i’m especially interested in 
+                <strong>web</strong> design/development, 
+                <strong>game</strong> design/development and 
+                <strong>ai + machine </strong>learning. 
+                <br>
+                in my spare time, you’d most often find me hanging out with my friends, 
+                <strong>reading</strong>, playing with my sister, or trying out new 
+                <strong>tools</strong>.
+            </p>
+            <h3>stick around for as long as you want and feel free to leave a message and a fish in my aquarium! (feature coming soon)</h3>
+        </div>
+    </section>
+
+    <section id="projects">
+    <h1>my projects</h1>
+        <div class="projects">
+            <h2><a href="https://github.com/Kesa1810/JamHacks" target="_blank">rhythm crossing</a></h2>
+            <p id="rhythm">Rhythm Crossing is an interactive rhythm game inspired by the popular VR game Beat Saber. It runs by connecting a phone (as the console) to a laptop and utilizing it’s IMU sensors. This project was built during JamHacks 10, the first hackathons I attended and it was my first time working with concepts such as using the browser's DeviceMotionEvent / DeviceOrientationEvent APIs.</p>
+            <h2>academica</h2>
+            <p id="academica">Academica is a student life planner and dashboard that connects the ideas from popular tools such as Notion, Google Calendar, todoist, Flocus, lifeat, Motion, and Reclaim AI into an all-in-one productivity tool. This tool interconnects smart AI calendar scheduling, study routines, pomodoro timers, and much more to be personalized to every user. This web app is a current work in progress.</p>
+        </div>
+    </section>
     <script src="script.js"></script>
-    <strong>bolded text!</strong>
-    <br>
-    <em>italicized :D</em>
-    <select>
-        <option>coffee</option>
-        <option>tea</option>
-        <option>berry juice</option>
-        <option>matcha</option>
-    </select>
-    <h2>life progress so far: </h2>
-    <progress value="16" max="100"></progress>
 </body>
 </html>
