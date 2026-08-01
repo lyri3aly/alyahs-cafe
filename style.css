@@ -4,6 +4,7 @@
     --brown:#5F4028;
     --darkbrown: #3F2A16;
     --navy: #1F273A;
+    --toffee: #BD8F6B;
 }
 
 .topnav {
@@ -19,8 +20,8 @@
     color: var(--lightbrown);
 
     justify-content: flex-end;
-    gap: 45px;
-    padding-right: 45px;
+    gap: 35px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
@@ -28,6 +29,26 @@
     text-decoration: none;
     color: var(--lightbrown);
     font-size: 18px;
+    border-radius: 15px;
+    display: inline-flex;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    color: var(--navy);
+}
+
+.topnav a.active {
+    background: rgba(31, 39, 58, 0.36);
+}
+
+.nav-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-deg);
+    width: 111px;
 }
 
 .header {
@@ -42,6 +63,14 @@
     font-size: 50px;
     color: var(--lightbrown);
     padding-top: 150px;
+    margin-left: -40px;
+}
+
+.starss {
+    position: absolute;
+    top: 440px;
+    right: 20px;
+    width: 180px;
 }
 
 body {
@@ -50,21 +79,38 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     color: var(--navy);
     padding-top: 20px;
+    padding-left: 40px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.menu-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
 }
 
 #menu {
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 48px;
+}
+
+#menu h1 {
+    padding-bottom: 12px;
 }
 
 #menu h2 {
     font-size: 23px;
     color: var(--brown);
-    padding-bottom: 20px;
-    padding-left: 45px;
+    margin: 35px;
 }
 
 #menu a {
@@ -75,7 +121,6 @@ h1 {
 
 #about {
     position: relative;
-    padding-left: 45px;
     padding-right: 45px;
 }
 
@@ -102,19 +147,29 @@ h1 {
     font-size: 20px;
     color: var(--darkbrown);
     letter-spacing: 2.8px;
+    line-height: 150%;
+    margin-right: 350px;
 }
 
 #about h3 {
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
     color: #FFF;
     padding-bottom: 30px;
     padding-top: 20px;
+    padding-left: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.projects {
+    position: relative;
+    z-index: 1;
 }
 
 #projects {
     position: relative;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #projects h2, p {
@@ -138,4 +193,18 @@ h1 {
     font-size: 20px;
     letter-spacing: 0.88px;
     padding-bottom: 40px;
+}
+
+.projects-rectangle {
+    position: absolute;
+
+    width: 100%;
+
+    background-color: var(--toffee);
+    opacity: 0.34;
+
+    top: 40px;
+    bottom: -20px;
+    left: 0;
+    z-index: 0;
 }
