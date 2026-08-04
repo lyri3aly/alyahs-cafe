@@ -2,7 +2,6 @@ const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll(".topnav a");
 
 window.addEventListener("scroll", () => {
-
     let current = "";
 
     sections.forEach(section => {
@@ -20,5 +19,6 @@ window.addEventListener("scroll", () => {
             link.classList.add("active");
         }
     });
-
 });
+
+// need to update, does not work properly
