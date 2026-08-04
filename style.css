@@ -122,8 +122,8 @@ h1 {
 
 .receiptify {
     position: absolute;
-    top: -450px;
-    right: 79px;
+    top: -540px;
+    right: 81px;
     width: 300px;
     z-index: 2;
 }
