@@ -20,5 +20,3 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-
-// need to update, does not work properly
