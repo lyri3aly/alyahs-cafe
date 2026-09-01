@@ -223,6 +223,18 @@ h1 {
     z-index: 0;
 }
 
+.blueystar {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    width: 130px;
+    z-index: 2;
+}
+
 #about p {
     font-size: 20px;
     color: var(--darkbrown);
@@ -342,7 +354,8 @@ h1 {
 .leapordstar,
 .maroonstar,
 .starss,
-.glass-star {
+.glass-star 
+.blueystar {
     position: absolute;
     cursor: grab;
     user-select: none;

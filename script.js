@@ -1,5 +1,5 @@
 // draggable stars! 
-const stickers = document.querySelectorAll(".leapordstar, .maroonstar, .starss, .glass-star");
+const stickers = document.querySelectorAll(".leapordstar, .maroonstar, .starss, .glass-star, .blueystar");
 
 stickers.forEach((sticker) => {
     let dragging = null;
