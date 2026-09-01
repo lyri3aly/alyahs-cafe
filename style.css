@@ -67,6 +67,10 @@
 }
 
 .leapordstar {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
     position: absolute;
     top: 395px;
     left: 30px;
@@ -74,13 +78,21 @@
 }
 
 .maroonstar {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
     position: absolute;
     top: 90px;
-    right: 0px;
-    width: 110px;
+    right: -33px;
+    width: 130px;
 }
 
 .starss {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
     position: absolute;
     top: 467px;
     right: 45px;
@@ -92,6 +104,7 @@
     width: 1200px;
     left: 80px;
     top: 250px;
+    pointer-events: none;
 }
 
 body {
@@ -121,6 +134,8 @@ h1 {
 }
 
 #menu {
+    position: relative;
+    z-index: 1;
     padding-top: 35px;
     padding-bottom: 80px;
     margin-right: 600px;
@@ -148,6 +163,7 @@ h1 {
     right: 81px;
     width: 300px;
     z-index: 2;
+    pointer-events: none;
 }
 
 #listened {
@@ -182,12 +198,15 @@ h1 {
 }
 
 .glass-star {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
     position: absolute;
     top: -100px;
     left: 35%;
     width: 140px;
     z-index: 2;
-    pointer-events: none;
 }
 
 .about-content {
@@ -309,10 +328,26 @@ h1 {
 }
 
 .blue-coffee {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: grab;
     position: absolute;
     bottom: -150px;
     left: 180px;
     width: 210px;
+    z-index: 2;
+}
+
+.leapordstar,
+.maroonstar,
+.starss,
+.glass-star {
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+    z-index: 5;
 }
 
 /* sizings for smaller/larger screens */
