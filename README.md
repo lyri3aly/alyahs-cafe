@@ -6,7 +6,7 @@ it is now deployed at: https://alyahli.ca
 
 <img width="959" height="596" alt="image" src="https://github.com/user-attachments/assets/0b6dfa62-bd83-4980-949e-ba4a52cf71d2" />
 
-features:
+### features:
 - a display of my current interests and activites in a cafe menu style
 - short about me with my recent spotify listens
 - quick overview of three of my personal projects from hackathons or just things i'm working on
@@ -23,7 +23,7 @@ built purely with:
 - CSS
 - JavaScript
 
-about the project 💭
+### about the project 💭
 I built alyah's cafe as a way to learn more about front-end development while creating something that I think is a good representation of who I am. rather than making a traditional, plain, boring, portfolio, I tried to make the website be as interactive as possible. (more features coming soon....)
 
 this project also helped me get more comfortable with HTML, CSS, JavaScript, responsive design, DOM manipulation, and Git/GitHub.
