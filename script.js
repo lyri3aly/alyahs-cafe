@@ -1,3 +1,25 @@
+// typing effect
+const title = document.getElementById("typing");
+
+function typeWriter() {
+    title.classList.add("typing");
+    title.textContent = "";
+    let i = 0;
+    const text = "welcome to alyah's cafe";
+
+    function tick() {
+        if (i < text.length) {
+            title.textContent += text.charAt(i);
+            i++;
+            setTimeout(tick, 50);
+        }
+    }
+
+    tick();
+}
+
+typeWriter();
+
 // draggable stars! 
 const stickers = document.querySelectorAll(".leapordstar, .maroonstar, .starss, .glass-star, .blueystar");
 
@@ -40,22 +62,24 @@ stickers.forEach((sticker) => {
 const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll(".topnav a");
 
-window.addEventListener("scroll", () => {
-    let current = "";
+function updateActiveNav() {
+    const triggerPoint = window.innerHeight * 0.35;
+    let current = "home";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 500;
+        const rect = section.getBoundingClientRect();
 
-        if (window.scrollY >= sectionTop) {
-            current = section.id;
+        if (rect.top <= triggerPoint && rect.bottom >= triggerPoint) {
+            current = section.id || "home";
         }
     });
 
     navLinks.forEach(link => {
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
+        const isActive = link.getAttribute("href") === `#${current}`;
+        link.classList.toggle("active", isActive);
     });
-});
+}
+
+updateActiveNav();
+window.addEventListener("scroll", updateActiveNav, { passive: true });
+window.addEventListener("load", updateActiveNav);
