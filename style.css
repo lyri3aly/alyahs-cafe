@@ -113,6 +113,13 @@ body {
     overflow-x: hidden;
 }
 
+body,
+a,
+button {
+  cursor: url("images/cursor/normal.png") 12 0, auto;
+}
+
+
 h1 {
     text-align: left;
     font-size: 30px;
@@ -201,7 +208,7 @@ h1 {
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
-    cursor: grab;
+    cursor: url("images/cursor/grab.png") 12 0, auto;
     position: absolute;
     top: -100px;
     left: 35%;
@@ -357,7 +364,7 @@ h1 {
 .glass-star 
 .blueystar {
     position: absolute;
-    cursor: grab;
+    cursor: url("images/cursor/grab.png") 12 0, auto;
     user-select: none;
     touch-action: none;
     z-index: 5;
