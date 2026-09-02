@@ -7,6 +7,31 @@
     --toffee: #BD8F6B;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 10px;
+  border: 2px solid var(--lightbrown);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkbrown);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: var(--lightbrown);
+  border-radius: 10px;
+}
+
 .topnav {
     display: flex;
     align-items: center;
@@ -33,10 +58,12 @@
     display: inline-flex;
     padding: 10px 15px;
     transition: 0.3s;
+    cursor: url("images/cursor/grab.png") 12 0, auto;
 }
 
 .topnav a:hover {
     color: var(--navy);
+    cursor: url("images/cursor/grab.png") 12 0, auto;
 }
 
 .topnav a.active {
@@ -163,6 +190,7 @@ h1 {
     text-decoration: underline;
     font-weight: 500;
     color: var(--brown);
+    cursor: url("images/cursor/grab.png") 12 0, auto;
 }
 
 .receiptify {
@@ -281,8 +309,8 @@ h1 {
 }
 
 #projects a {
+    cursor: url("images/cursor/grab.png") 12 0, auto;
     text-decoration: none;
-    color: var(--darkbrown);
 }
 
 #projects #rhythm, #projects #daydream {
@@ -411,9 +439,9 @@ h1 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
     .nav-stars {
-        width: 90px;
+        width: 70px;
     }
 
     .starss {
@@ -447,13 +475,13 @@ h1 {
     #listened p {
         display: block;
         text-align: center;
-        top: -80px;
+        top: -70px;
         position: absolute;
         z-index: 3;
     }
 
     #arrow {
-        left: 90px;
+        left: 130px;
         transform: rotate(30deg);
     }
 

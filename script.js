@@ -18,7 +18,7 @@ function typeWriter() {
     tick();
 }
 
-typeWriter();
+setTimeout(typeWriter, 1000);
 
 // draggable stars! 
 const stickers = document.querySelectorAll(".leapordstar, .maroonstar, .starss, .glass-star, .blueystar");
