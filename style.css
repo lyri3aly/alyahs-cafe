@@ -105,6 +105,7 @@
     left: 80px;
     top: 250px;
     pointer-events: none;
+    object-fit: cover;
 }
 
 body {
@@ -361,7 +362,7 @@ h1 {
 .leapordstar,
 .maroonstar,
 .starss,
-.glass-star 
+.glass-star,
 .blueystar {
     position: absolute;
     cursor: url("images/cursor/grab.png") 12 0, auto;
@@ -408,4 +409,94 @@ h1 {
         top: -365px;
         right: 300px;
     }
+}
+
+@media (max-width: 600px) {
+    .nav-stars {
+        width: 90px;
+    }
+
+    .starss {
+        top: 470px;
+        width: 120px;
+    }
+
+    .glass-star {
+        width: 120px;
+    }
+
+    .blueystar {
+        width: 120px;
+    }
+
+    .topnav {
+        gap: 0;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item:nth-of-type(4),
+    .menu-item:nth-of-type(5) {
+        grid-column: 1 / -1;
+    }
+
+    #listened-text, 
+    #listened p {
+        display: block;
+        text-align: center;
+        top: -80px;
+        position: absolute;
+        z-index: 3;
+    }
+
+    #arrow {
+        left: 90px;
+        transform: rotate(30deg);
+    }
+
+    #listened {
+        margin-bottom: 150px;
+    }
+
+    .receiptify {
+        position: relative;
+        top: 20px;
+        right: 0;
+        display: block;
+        width: min(70vw, 300px);
+        margin: 0 auto 20px;
+        z-index: 2;
+    }
+
+    #listened {
+        position: relative;
+    }
+
+    #about p {
+        margin-right: 0;
+    }
+}
+
+/* keyframes for typing animation */
+#typing::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.09em;
+  background-color: var(--lightbrown);
+  vertical-align: text-bottom;
+  margin-left: 4px;
+  animation: blink 0.7s 6 forwards;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
 }
