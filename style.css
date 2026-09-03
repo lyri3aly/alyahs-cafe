@@ -8,8 +8,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border-radius: 10px;
 }
 
@@ -30,6 +30,16 @@
 ::-webkit-scrollbar-track-piece {
   background: var(--lightbrown);
   border-radius: 10px;
+}
+
+::-moz-selection {
+  color: var(--lightbrown);
+  background: var(--navy);
+}
+
+::selection {
+  color: var(--lightbrown);
+  background: var(--navy);
 }
 
 .topnav {
