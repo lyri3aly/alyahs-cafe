@@ -412,6 +412,7 @@ h1 {
 /* skills section */
 #skills {
     padding: 100px 0;
+    padding-bottom: 150px;
 }
 
 .skills-content {
