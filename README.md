@@ -10,6 +10,7 @@ it is now deployed at: https://alyahli.ca
 - a display of my current interests and activites in a cafe menu style
 - short about me with my recent spotify listens
 - quick overview of three of my personal projects from hackathons or just things i'm working on
+- a collapsable list of my current programming skills
 - CLICKABLE AND DRAGGABLE STARS! I'm really proud of this one it took so long, but click and drag stars around the site like stickers!
 - typing animating for "welcome to alyah's cafe"
 - navbar that also automatically detects which section you're on
@@ -24,6 +25,6 @@ built purely with:
 - JavaScript
 
 ### about the project 💭
-I built alyah's cafe as a way to learn more about front-end development while creating something that I think is a good representation of who I am. rather than making a traditional, plain, boring, portfolio, I tried to make the website be as interactive as possible. (more features coming soon....)
+I built alyah's cafe as a way to learn more about front-end development while creating something that I think is a good representation of who I am. rather than making a traditional, plain, boring, portfolio, I tried to make the website be as interactive as possible. (more features and sections coming soon....)
 
 this project also helped me get more comfortable with HTML, CSS, JavaScript, responsive design, DOM manipulation, and Git/GitHub.
