@@ -414,24 +414,22 @@ h1 {
     padding: 100px 0;
 }
 
-#skills h1 {
-    padding-left: 60px;
-}
-
 .skills-content {
     max-width: 900px;
     margin: 0 auto 30px;
 }
 
 .skills-content h1 {
+    text-align: center;
     padding-left: 0;
 }
 
 .skills-content p {
     margin: 0;
-    padding: 0 60px;
+    padding: 0 20px;
     color: var(--brown);
     font-size: 18px;
+    text-align: center;
 }
 
 .skills-buttons {
