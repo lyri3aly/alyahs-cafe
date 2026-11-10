@@ -83,3 +83,18 @@ function updateActiveNav() {
 updateActiveNav();
 window.addEventListener("scroll", updateActiveNav, { passive: true });
 window.addEventListener("load", updateActiveNav);
+
+// expandable skills
+const skillButtons = document.querySelectorAll(".skill-button");
+
+skillButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const description = button.nextElementSibling;
+        const icon = button.querySelector(".skill-icon");
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+
+        description.hidden = isOpen;
+        button.setAttribute("aria-expanded", String(!isOpen));
+        icon.textContent = isOpen ? "+" : "−";
+    });
+});
