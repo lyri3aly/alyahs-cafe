@@ -146,6 +146,7 @@
 }
 
 body {
+    font-family: "Fraunces", serif;
     margin: 0;
     background: #E6CCB2;
     overflow-x: hidden;
@@ -412,7 +413,7 @@ h1 {
 /* skills section */
 #skills {
     padding: 100px 0;
-    padding-bottom: 150px;
+    padding-bottom: 170px;
 }
 
 .skills-content {
