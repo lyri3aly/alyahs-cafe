@@ -145,6 +145,11 @@
     object-fit: cover;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Fraunces", serif;
     margin: 0;
@@ -525,6 +530,29 @@ h1 {
 }
 
 @media (max-width: 690px) {
+    .topnav {
+        justify-content: space-between;
+        gap: 2px;
+        padding: 0 5px;
+        overflow: hidden;
+    }
+
+    .topnav a {
+        flex: 1;
+        min-width: 0;
+        justify-content: center;
+        padding: 8px 3px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .backgroundstars {
+        width: 100%;
+        max-width: 100vw;
+        left: 0;
+        object-fit: cover;
+    }
+
     .nav-stars {
         width: 70px;
     }
