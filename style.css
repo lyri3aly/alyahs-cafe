@@ -533,14 +533,13 @@ h1 {
     .topnav {
         justify-content: space-between;
         gap: 2px;
-        padding: 0 5px;
+        padding: 0;
         overflow: hidden;
     }
 
     .topnav a {
         flex: 1;
         min-width: 0;
-        justify-content: center;
         padding: 8px 3px;
         font-size: 15px;
         white-space: nowrap;
