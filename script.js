@@ -98,3 +98,21 @@ skillButtons.forEach(button => {
         icon.textContent = isOpen ? "+" : "−";
     });
 });
+
+// toggle on phone
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinksMenu = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    navLinksMenu.classList.toggle("open", !isOpen);
+});
+
+navLinksMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        navLinksMenu.classList.remove("open");
+    });
+});
